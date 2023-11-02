@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/mystyle.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="site-header">
+        <div class="flex-container">
+        <h1>Real Estate</h1>
+            <nav>
+                <a href="about.html">About</a>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+    <main class="container">
+        <h2>Contact</h2>
+        <p>Fill The Next Information</p>
+
+    <fieldset>
+        <legend>Personal Information</legend>
+            <div>
+                <label>Name:</label>
+                <input type="text" value="Type Your Name.">
+            </div>
+            <div>
+                <label>Email:</label>
+                <input type="email" value="Type Your Email.">
+            </div>
+            <div>
+                <label>Phone Number:</label>
+                <input type="tel" value="Type Your Phone Number.">
+            </div>
+            <div>
+                <label>Message:</label>
+                <textarea col="30" rows="10"></textarea>
+            </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>Product Information</legend>
+        <div>
+            <label>TYPE</label>
+            <select type="select and option" value="select and option">
+                <option value="volvo">1</option>
+                <option value="saab">2</option>
+                <option value="opel">3</option>
+                <option value="audi">4</option>
+            </select>
+        </div>
+        <div>
+            <label>NUMBER</label>
+            <input type="number">
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>Contact Information</legend>
+        <div class="flex-container">
+            <label>Phone:</label>
+            <input type="checkbox" id="phone" name="phone"/>
+            <label>Email:</label>
+            <input type="checkbox" id="email" name="email"/>
+        </div>
+        <p>If you want to be contacted by phone, please select a day and hour:</p>
+        <div>
+            <label>Date</label>
+            <input type="date" id="start" name="trip-start" value="2018-07-22" min="2000-01-01" max="2027-12-31" />
+        </div>
+        <div>
+            <label>Hour</label>
+            <input type="time" id="appt" name="appt" min="09:00" max="18:00" required />
+        </div>
+    </fieldset>
+    <div>
+    <a class="send-btn" href="#">send</a>
+    </div>
+    </main>
+</body>
+</html>
